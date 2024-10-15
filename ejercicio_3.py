@@ -12,7 +12,7 @@ height/ 3
 width = 17
 height = 12.0
 
-print ("El resto de dividir " + str(width) + "entre 2 es: " + str(width//2),type(width//2))
-print ("El resultado de dividir " +str(width) + "entre 2 es: " + str(width/ 2.0), type(width/ 2.0))
-print ("El resultado de dividir " +str(height) + "entre 3 es: " + str(height/ 3), type(height/ 3))
+print ("El resto de dividir " + str(width) + " entre 2 es: " + str(width//2),type(width//2))
+print ("El resultado de dividir " +str(width) + " entre 2 es: " + str(width/ 2.0), type(width/ 2.0))
+print ("El resultado de dividir " +str(height) + " entre 3 es: " + str(height/ 3), type(height/ 3))
 print ("El resultado de (1+2*5) es: " + str(1+2*5), type (1+2*5))
