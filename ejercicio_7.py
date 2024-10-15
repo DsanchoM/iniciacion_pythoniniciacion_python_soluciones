@@ -18,7 +18,7 @@ def my_puntuacion():
 
 pun = my_puntuacion()
 
-if  pun < 0.0 and pun > 1.0:
+if  pun < 0.0 or pun > 1.0:
 	print ("Error, por favor ha de introducir un número entre 0.0 y 1.0")
      
 elif pun >= 0.9:
