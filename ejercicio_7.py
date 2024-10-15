@@ -1,0 +1,18 @@
+try:
+    i=0
+    while i==0:
+        grade = float(input("Introduzca un número entre 0.0 y 1.0 para saber la calificación final: "))
+        if grade>=0.0 and grade<=1.0:
+            i+=1
+    if grade>=0.9:
+        print("Your grade is: A")
+    elif grade>=0.8:
+        print("Your grade is: B")
+    elif grade >= 0.7:
+        print("Your grade is: C")
+    elif grade>=0.6:
+        print("Your grade is: D")
+    else:
+        print("Your grade is: F")
+except:
+    print("Error, please enter numeric rate" )
