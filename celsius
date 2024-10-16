@@ -1,5 +1,5 @@
 # Solicitar al usuario el grado en Celsius
-celsius = float(input("Introduce la temperatura en grados Celsius: "))
+celsius = float(input("Introduce la temperatura en grados Celsius: \n"))
 
 # Convertir Celsius a Fahrenheit
 fahrenheit = (celsius * 9/5) + 32
