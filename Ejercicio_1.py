@@ -1,2 +1,2 @@
 nombre=input('Introduzca su nombre:\n')
-print ("'Bienvenido'""(nombre)")
+print ("Bienvenido",nombre)
