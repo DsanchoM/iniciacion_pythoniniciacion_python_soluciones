@@ -1,3 +1,5 @@
+#Ejercicio 2. Escribe un programa que lea las horas trabajadas por un empleado y su tarifa por hora.
+
 horas = input("Indica tus horas: ")
 tarifa = input("Indica tu tarifa: ")
 total = float(horas) * float(tarifa)
