@@ -1,5 +1,9 @@
 #EJERCICIO 5: Reescribe tu cálculo de pago (EJERCICIO 2) para darle al empleado 1.5 veces la tarifa por hora por las horas trabajadas por encima de las 40 horas. La salida es la siguiente:
 
+#Enter Hours: 45
+#Enter Rate: 10
+#Pay: 475.0
+
 #SOLUCIÓN:
 
 precio=input("indique su tarifa por hora, por favor\n")
