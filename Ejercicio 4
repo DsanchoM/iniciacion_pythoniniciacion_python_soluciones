@@ -1,0 +1,10 @@
+#EJERCICIO 4: Escribe un programa que solicite al usuario una temperatura en grados Celsius,
+#convierta la temperatura a Fahrenheit e imprima la temperatura convertida
+# ( °C × 9 / 5) + 32 =  °F  //// FORMULA
+
+
+print("Conversor de grados Celsius a Fahrenheit")
+
+x = int(input("grados celsius (cº)"))
+
+print(f"Grados Fahrenheit (ºF)= " , (( x *9 / 5 ) + 32))
