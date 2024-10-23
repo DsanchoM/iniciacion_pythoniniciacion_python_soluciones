@@ -25,3 +25,8 @@ if count == 0:
     print ("No se ha indicado ningun número")
 else:
     print("Total: "+ str(total) +"\nCount: "+str(count)+"\nPromedio: "+str(total/count))
+
+if count == 0:
+    print ("No se ha indicado ningun número")
+else:
+    print("Total: "+ str(total) +"\nCount: "+str(count)+"\nPromedio: "+str(total/count))
