@@ -1,7 +1,7 @@
 def main():
     try:
-        nhoras = int(input("Escriba el numero de horas: "))
-        phoras = int(input("Escriba el precio de las horas: "))
+        nhoras = float(input("Escriba el numero de horas: "))
+        phoras = float(input("Escriba el precio de las horas: "))
     except ValueError:
         print("Error, please enter numeric input")
         return main()
