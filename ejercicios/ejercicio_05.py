@@ -1,5 +1,5 @@
-hours = float(input("Introduzca el número de horas"))
-fee = float(input("Introduzca el precio de la tarifa"))
+hours = float(input("Introduzca el número de horas\n"))
+fee = float(input("Introduzca el precio de la tarifa\n"))
 
 if hours > 40.0:
     total = ((hours - 40.0) * (fee * 1.5)) + (40 * fee)
