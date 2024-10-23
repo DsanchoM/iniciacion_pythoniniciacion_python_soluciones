@@ -9,3 +9,7 @@ start_pos = str.find(':') + 1
 number_str = str[start_pos:].strip()
 confidence = float(number_str)
 print(confidence)
+
+#otra forma de hacerlo
+longitud= len(str)
+print (float(str [start_pos:longitud]))
