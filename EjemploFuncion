@@ -1,0 +1,7 @@
+def suma(x,y):
+    return x + y
+
+num1 = int (input ("Pon un número"))
+num2 = int (input ("Pon otro número"))
+
+print (suma(num1,num2))
