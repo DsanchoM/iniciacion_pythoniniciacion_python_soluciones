@@ -1,0 +1,8 @@
+import math
+
+def areacirculo(radio) :
+    area = radio**radio * math.pi
+    return area
+
+radioUsuario = int(input("Introduce el radio: "))
+print (areacirculo(radioUsuario))
