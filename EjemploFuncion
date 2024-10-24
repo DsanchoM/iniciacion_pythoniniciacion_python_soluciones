@@ -1,7 +1,14 @@
 def suma(x,y):
-    return x + y
+    suma = x + y
+    resta = x - y
+    return suma, resta
 
-num1 = int (input ("Pon un número"))
-num2 = int (input ("Pon otro número"))
+num1 = int (input ("Pon un número: "))
+num2 = int (input ("Pon otro número: "))
 
-print (suma(num1,num2))
+operaciones = [] 
+
+operaciones = (suma(num1,num2))
+
+print (operaciones[0])
+print (operaciones[1])
