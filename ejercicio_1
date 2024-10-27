@@ -1,0 +1,5 @@
+##EJERCICIO 1: Escribe un programa que use input para pedirle a un usuario su nombre y luego le de la bienvenida.
+#Pedir el nombre y almacenarlo
+name=input ('Introduce tu nombre:\n')
+#Dar la bienvenida con su nombre
+print("Bienvenido/a, " + name + ", al primer ejercicio.")
