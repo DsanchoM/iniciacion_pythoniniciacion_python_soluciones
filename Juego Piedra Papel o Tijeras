@@ -1,0 +1,75 @@
+'''
+Desarrollar un código que emule una partida del famoso juego,
+entre la máquina y el usuario.
+El código debe tener las siguientes características:
+1.El programa le pide al usuario que elija entre las tres posibilidades
+2.Sacar un mensaje de error si el usuario no ha introducido bien su respuesta
+3.El programa devuelve una frase diciendo qué ha sacado la máquina y si gana o pierde el usuario
+4.El programa se ejecuta constantemente. (pregunta de nuevo cuando la partida ha terminado)
+5.Se han de emplear (funciones, bucles, condicionales, try/except,)
+6.Voluntario (llevar el conteo de las partidas ganadas cada uno y se muestre en cada ronda)
+'''
+import random 
+
+# Función elección máquina
+def eleccion_maquina():
+    opciones = ["piedra", "papel", "tijera"]
+    return random.choice(opciones)
+
+# Función eleccion jugador
+def eleccion_jugador(): 
+    while True:
+        print ("Introduce 'piedra', 'papel' o 'tijeras':")
+        jugador = input("Elige opción: ").lower()   
+        if jugador not in ["piedra", "papel", "tijera"]:
+            print ("Opción no válida: " + str(jugador) + "\n")          
+            continue
+        else:
+            break
+    return jugador
+
+# Función para determinar el ganador
+def determinar_ganador(jugador, maquina):
+    if jugador == maquina:
+        return "Empate"
+    elif (jugador == "piedra" and maquina == "tijera") or \
+         (jugador == "papel" and maquina == "piedra") or \
+         (jugador == "tijera" and maquina == "papel"):
+        return "¡Ganaste!"
+    else:
+        return "Perdiste"
+
+def main():
+    partidas = 0 
+    ganajugador = 0
+    ganamaquina = 0
+
+    while True:
+        jugador = eleccion_jugador()
+        maquina = eleccion_maquina()
+    
+        print ("La máquina eligió: " + str(maquina))
+        resultado = (determinar_ganador (jugador, maquina))
+        print(resultado + "\n")
+        partidas += 1
+
+        if resultado == "¡Ganaste!":
+            ganajugador += 1
+        if resultado == "Perdiste":
+            ganamaquina += 1
+
+        print ("Total de partidas jugadas: " + str(partidas))
+        print ("---------------------------")
+        print ("Partidas ganadas Jugador: " + str(ganajugador))
+        print ("Partidas ganadas Máquina: " + str(ganamaquina))
+        
+        # Preguntar al usuario si quiere jugar de nuevo
+        print (str(opcion := input("\n¿Otra partida? (s/n): ").lower()))
+        if opcion  == 'n':
+            break
+
+# Manejo de errores y ejecución del juego
+try:
+    main()
+except Exception as e:
+    print("Se ha producido un error: " + str(e))
