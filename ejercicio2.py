@@ -1,0 +1,6 @@
+print("Introduce las horas")
+horas = input()
+print("Introduce la tarifa por hora")
+tarifa = input()
+calculo = int(horas) * int(tarifa)
+print("Pago bruto: " + str(calculo))
