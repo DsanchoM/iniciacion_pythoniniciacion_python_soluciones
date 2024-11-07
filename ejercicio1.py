@@ -1,3 +1,2 @@
-print("Hola! ¿Cuál es tu nombre?")
-nombre = input()
+nombre = input("Hola! ¿Cuál es tu nombre?\n")
 print("Hola " + nombre)

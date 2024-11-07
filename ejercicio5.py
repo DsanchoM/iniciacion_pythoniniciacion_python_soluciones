@@ -1,8 +1,6 @@
-print("Introduce las horas")
-horas = input()
+horas = input("Introduce las horas\n")
 
-print("Introduce la tarifa por hora")
-tarifa = input()
+tarifa = input("Introduce la tarifa por hora\n")
 
 if int(horas) > 40:
     extra = int(horas) - 40
