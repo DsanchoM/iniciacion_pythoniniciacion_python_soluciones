@@ -4,7 +4,7 @@
 temperatura = (input)
 
 #solicitado el valor
-temperatura=int(input('Cual es la temperatura en Grados Celsius' ))
+temperatura=int(input('Cual es la temperatura en Grados Celsius\n' ))
  
 #relizar formula
 resultado = (temperatura * 9 / 5) + 32 
