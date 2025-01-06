@@ -1,0 +1,57 @@
+import random
+
+def jugar_partida():
+  """
+  Juega una partida de piedra, papel o tijera contra la máquina.
+
+  Returns:
+    str: El resultado de la partida ('ganaste', 'perdiste' o 'empate').
+  """
+
+  opciones = ['piedra', 'papel', 'tijera']
+  maquina = random.choice(opciones)
+
+  while True:
+    try:
+      usuario = input("Elige piedra, papel o tijera: ").lower()
+      if usuario not in opciones:
+        raise ValueError("Opción inválida. Por favor, elige piedra, papel o tijera.")
+      break
+    except ValueError as e:
+      print(e)
+
+  print(f"La máquina ha sacado {maquina}.")
+
+  if usuario == maquina:
+    return 'empate'
+  elif (usuario == 'piedra' and maquina == 'tijera') or \
+       (usuario == 'papel' and maquina == 'piedra') or \
+       (usuario == 'tijera' and maquina == 'papel'):
+    return 'ganaste'
+  else:
+    return 'perdiste'
+
+
+def juego():
+  """
+  Ejecuta el juego de piedra, papel o tijera de forma continua,
+  mostrando el conteo de victorias.
+  """
+
+  victorias_usuario = 0
+  victorias_maquina = 0
+
+  while True:
+    resultado = jugar_partida()
+
+    if resultado == 'ganaste':
+      victorias_usuario += 1
+    elif resultado == 'perdiste':
+      victorias_maquina += 1
+
+    print(f"Resultado: {resultado}")
+    print(f"Marcador: Usuario {victorias_usuario} - Máquina {victorias_maquina}")
+
+
+if __name__ == "__main__":
+  juego()
